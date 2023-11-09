@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/donpat/ServiceShare2/StreamingServices.Core/StreamingServices.Core.csproj": {}
+    "/home/donpat/ServiceShare.ServiceTypes/ServiceShare2/StreamingServices.Core/StreamingServices.Core.csproj": {}
   },
   "projects": {
-    "/home/donpat/ServiceShare2/StreamingServices.Core/StreamingServices.Core.csproj": {
+    "/home/donpat/ServiceShare.ServiceTypes/ServiceShare2/StreamingServices.Core/StreamingServices.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/donpat/ServiceShare2/StreamingServices.Core/StreamingServices.Core.csproj",
+        "projectUniqueName": "/home/donpat/ServiceShare.ServiceTypes/ServiceShare2/StreamingServices.Core/StreamingServices.Core.csproj",
         "projectName": "StreamingServices.Core",
-        "projectPath": "/home/donpat/ServiceShare2/StreamingServices.Core/StreamingServices.Core.csproj",
-        "packagesPath": "/root/.nuget/packages/",
-        "outputPath": "/home/donpat/ServiceShare2/StreamingServices.Core/obj/",
+        "projectPath": "/home/donpat/ServiceShare.ServiceTypes/ServiceShare2/StreamingServices.Core/StreamingServices.Core.csproj",
+        "packagesPath": "/home/donpat/.nuget/packages/",
+        "outputPath": "/home/donpat/ServiceShare.ServiceTypes/ServiceShare2/StreamingServices.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/root/.nuget/NuGet/NuGet.Config"
+          "/home/donpat/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"

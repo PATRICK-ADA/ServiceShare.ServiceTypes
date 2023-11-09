@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "/root/.nuget/packages/": {}
+    "/home/donpat/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/donpat/ServiceShare2/StreamingServices.Domain/StreamingServices.Domain.csproj",
+      "projectUniqueName": "/home/donpat/ServiceShare.ServiceTypes/ServiceShare2/StreamingServices.Domain/StreamingServices.Domain.csproj",
       "projectName": "StreamingServices.Domain",
-      "projectPath": "/home/donpat/ServiceShare2/StreamingServices.Domain/StreamingServices.Domain.csproj",
-      "packagesPath": "/root/.nuget/packages/",
-      "outputPath": "/home/donpat/ServiceShare2/StreamingServices.Domain/obj/",
+      "projectPath": "/home/donpat/ServiceShare.ServiceTypes/ServiceShare2/StreamingServices.Domain/StreamingServices.Domain.csproj",
+      "packagesPath": "/home/donpat/.nuget/packages/",
+      "outputPath": "/home/donpat/ServiceShare.ServiceTypes/ServiceShare2/StreamingServices.Domain/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/root/.nuget/NuGet/NuGet.Config"
+        "/home/donpat/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"

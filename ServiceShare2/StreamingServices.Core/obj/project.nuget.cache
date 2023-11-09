@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JwU9PyZFHHXfptYS38ojlB/Khr7luO6k774zeYigwmaDZH/UNY4V/5wsaURAmFPXtbPMMi19qB7aNHXohTlkrQ==",
+  "dgSpecHash": "VjVi54vvxFQtn6om7or3iPQGksxAh3w5jUf6ouVfYa4YEymiKw4DL+bbipIud3oYt+Rdtl6EjiQhD3YmWK/nBw==",
   "success": true,
-  "projectFilePath": "/home/donpat/ServiceShare2/StreamingServices.Core/StreamingServices.Core.csproj",
+  "projectFilePath": "/home/donpat/ServiceShare.ServiceTypes/ServiceShare2/StreamingServices.Core/StreamingServices.Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
