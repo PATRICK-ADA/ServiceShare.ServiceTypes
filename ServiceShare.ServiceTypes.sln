@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ServiceShare2", "ServiceShare2", "{C854FF90-B8EB-4ABE-8758-AF62C2C06314}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StreamingServices.Domain", "ServiceShare2\StreamingServices.Domain\StreamingServices.Domain.csproj", "{B8DA277E-0420-4C62-B958-353F58B836C4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StreamingService", "ServiceShare2\StreamingServices.api\StreamingService.csproj", "{2D6020E1-488D-474C-8507-E33A4E2DCE99}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StreamingServices.Core", "ServiceShare2\StreamingServices.Core\StreamingServices.Core.csproj", "{005DD62D-B9CA-4A70-8CEC-B4BDB705E3AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8DA277E-0420-4C62-B958-353F58B836C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8DA277E-0420-4C62-B958-353F58B836C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8DA277E-0420-4C62-B958-353F58B836C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8DA277E-0420-4C62-B958-353F58B836C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D6020E1-488D-474C-8507-E33A4E2DCE99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D6020E1-488D-474C-8507-E33A4E2DCE99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D6020E1-488D-474C-8507-E33A4E2DCE99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D6020E1-488D-474C-8507-E33A4E2DCE99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{005DD62D-B9CA-4A70-8CEC-B4BDB705E3AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{005DD62D-B9CA-4A70-8CEC-B4BDB705E3AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{005DD62D-B9CA-4A70-8CEC-B4BDB705E3AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{005DD62D-B9CA-4A70-8CEC-B4BDB705E3AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B8DA277E-0420-4C62-B958-353F58B836C4} = {C854FF90-B8EB-4ABE-8758-AF62C2C06314}
+		{2D6020E1-488D-474C-8507-E33A4E2DCE99} = {C854FF90-B8EB-4ABE-8758-AF62C2C06314}
+		{005DD62D-B9CA-4A70-8CEC-B4BDB705E3AE} = {C854FF90-B8EB-4ABE-8758-AF62C2C06314}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {788E85B3-1ABD-4241-99B8-C011A972CDDA}
+	EndGlobalSection
+EndGlobal
