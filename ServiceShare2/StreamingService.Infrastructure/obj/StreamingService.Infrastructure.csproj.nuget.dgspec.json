@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/donpat/ServiceShare.ServiceTypes/ServiceShare2/StreamingServices.Domain/StreamingServices.Domain.csproj": {}
+    "/home/donpat/ServiceShare.ServiceTypes/ServiceShare2/StreamingService.Infrastructure/StreamingService.Infrastructure.csproj": {}
   },
   "projects": {
-    "/home/donpat/ServiceShare.ServiceTypes/ServiceShare2/StreamingServices.Domain/StreamingServices.Domain.csproj": {
+    "/home/donpat/ServiceShare.ServiceTypes/ServiceShare2/StreamingService.Infrastructure/StreamingService.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/donpat/ServiceShare.ServiceTypes/ServiceShare2/StreamingServices.Domain/StreamingServices.Domain.csproj",
-        "projectName": "StreamingServices.Domain",
-        "projectPath": "/home/donpat/ServiceShare.ServiceTypes/ServiceShare2/StreamingServices.Domain/StreamingServices.Domain.csproj",
+        "projectUniqueName": "/home/donpat/ServiceShare.ServiceTypes/ServiceShare2/StreamingService.Infrastructure/StreamingService.Infrastructure.csproj",
+        "projectName": "StreamingService.Infrastructure",
+        "projectPath": "/home/donpat/ServiceShare.ServiceTypes/ServiceShare2/StreamingService.Infrastructure/StreamingService.Infrastructure.csproj",
         "packagesPath": "/root/.nuget/packages/",
-        "outputPath": "/home/donpat/ServiceShare.ServiceTypes/ServiceShare2/StreamingServices.Domain/obj/",
+        "outputPath": "/home/donpat/ServiceShare.ServiceTypes/ServiceShare2/StreamingService.Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/root/.nuget/NuGet/NuGet.Config"

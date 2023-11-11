@@ -1,0 +1,12 @@
+/home/donpat/ServiceShare.ServiceTypes/ServiceShare2/StreamingServices.Domain/bin/Debug/net7.0/StreamingServices.Domain.deps.json
+/home/donpat/ServiceShare.ServiceTypes/ServiceShare2/StreamingServices.Domain/bin/Debug/net7.0/StreamingServices.Domain.dll
+/home/donpat/ServiceShare.ServiceTypes/ServiceShare2/StreamingServices.Domain/bin/Debug/net7.0/StreamingServices.Domain.pdb
+/home/donpat/ServiceShare.ServiceTypes/ServiceShare2/StreamingServices.Domain/obj/Debug/net7.0/StreamingServices.Domain.csproj.AssemblyReference.cache
+/home/donpat/ServiceShare.ServiceTypes/ServiceShare2/StreamingServices.Domain/obj/Debug/net7.0/StreamingServices.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/donpat/ServiceShare.ServiceTypes/ServiceShare2/StreamingServices.Domain/obj/Debug/net7.0/StreamingServices.Domain.AssemblyInfoInputs.cache
+/home/donpat/ServiceShare.ServiceTypes/ServiceShare2/StreamingServices.Domain/obj/Debug/net7.0/StreamingServices.Domain.AssemblyInfo.cs
+/home/donpat/ServiceShare.ServiceTypes/ServiceShare2/StreamingServices.Domain/obj/Debug/net7.0/StreamingServices.Domain.csproj.CoreCompileInputs.cache
+/home/donpat/ServiceShare.ServiceTypes/ServiceShare2/StreamingServices.Domain/obj/Debug/net7.0/StreamingServices.Domain.dll
+/home/donpat/ServiceShare.ServiceTypes/ServiceShare2/StreamingServices.Domain/obj/Debug/net7.0/refint/StreamingServices.Domain.dll
+/home/donpat/ServiceShare.ServiceTypes/ServiceShare2/StreamingServices.Domain/obj/Debug/net7.0/StreamingServices.Domain.pdb
+/home/donpat/ServiceShare.ServiceTypes/ServiceShare2/StreamingServices.Domain/obj/Debug/net7.0/ref/StreamingServices.Domain.dll
