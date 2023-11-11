@@ -19,8 +19,6 @@ public int UtubeWeeklyUsersCappacity {get; set;}
 
 public DateTime SubscriptionTime {get; set;} = DateTime.Now;
 
-public int SubscriptionDurationTracker {get; set;}
-
 public string UserId {get; set;} = string.Empty;
 
    }

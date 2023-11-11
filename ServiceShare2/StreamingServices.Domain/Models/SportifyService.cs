@@ -11,12 +11,16 @@ public int MonthlyService {get;set;} = 30;
 
 public int YearlyService  {get; set;} = 360;
 
+
+public int SportifyYearlyUsersCappacity {get; set;}
+
+public int SportifyMonthlyUsersCappacity {get; set;}
+
+public int SportifyWeeklyUsersCappacity {get; set;}
+
 public DateTime SubscriptionTime {get; set;} = DateTime.Now;
 
-public int SubscriptionDurationTracker {get; set;}
-
 public string UserId {get; set;} = string.Empty;
-
 
     }
 }
