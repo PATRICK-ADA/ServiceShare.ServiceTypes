@@ -1,16 +1,14 @@
 
 using System.Runtime.Serialization;
-using SModel;
+using SModel.UtubeService;
 
 namespace Abstraction.IUtubeService
 { 
 public interface IUtubeService
   {
-
-Task<Services> GetServiceById(string serviceId);
-Task<Services> GetServiceByServiceType(string serviceType);
-Task<List<Services>> GetServicesByUserId(string UserId);
-
+Task<UtubeService> GetServiceById(string serviceId);
+Task<UtubeService> GetServiceByServicePlan(string serviceType);
+Task<List<UtubeService>> GetServicesByUserId(string UserId);
   }
 
 }
