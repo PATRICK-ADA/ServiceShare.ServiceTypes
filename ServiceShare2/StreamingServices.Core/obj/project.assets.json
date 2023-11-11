@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "StreamingServices.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/StreamingServices.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StreamingServices.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "StreamingServices.Domain/1.0.0": {
+      "type": "project",
+      "path": "../StreamingServices.Domain/StreamingServices.Domain.csproj",
+      "msbuildProject": "../StreamingServices.Domain/StreamingServices.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "StreamingServices.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/home/donpat/.nuget/packages/": {}
@@ -31,7 +50,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/donpat/ServiceShare.ServiceTypes/ServiceShare2/StreamingServices.Domain/StreamingServices.Domain.csproj": {
+              "projectPath": "/home/donpat/ServiceShare.ServiceTypes/ServiceShare2/StreamingServices.Domain/StreamingServices.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
