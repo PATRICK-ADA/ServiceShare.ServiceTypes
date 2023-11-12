@@ -20,7 +20,6 @@ public int NetFlixWeeklyUsersCappacity {get; set;}
 
 public DateTime SubscriptionTime {get; set;} = DateTime.Now;
 
-
 public string UserId {get; set;} = string.Empty;
 
   }
