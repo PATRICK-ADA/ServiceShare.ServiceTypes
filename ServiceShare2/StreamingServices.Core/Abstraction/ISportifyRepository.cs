@@ -7,10 +7,13 @@ namespace Abstraction.ISportifyRepository
 public interface ISportifyRepository
   {
 
+
 Task<SportifyService> GetServiceById(string serviceId);
 Task<SportifyService> GetServiceByServicePlan(string serviceType);
-Task<List<SportifyService>> GetAllUserServicePlansByUserId(string UserId);
-Task<int>  GetNumberOfUnusedServices(int maxNumberOfUsers);
+Task<IEnumerable<SportifyService>> GetAllUserServicePlansByUserId(string UserId);
+Task<int>  GetNumberOfUnusedYearlyServicePlans(int maxNumberOfUsers);
+Task<int>  GetNumberOfUnusedMonthlyServicePlans(int maxNumberOfUsers);
+Task<int>  GetNumberOfUnusedWeeklyServicePlans(int maxNumberOfUsers);
 
 
  }

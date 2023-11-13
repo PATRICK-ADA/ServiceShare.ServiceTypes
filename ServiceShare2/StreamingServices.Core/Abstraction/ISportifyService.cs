@@ -11,7 +11,9 @@ public interface ISportifyService
 Task<SportifyService> GeatServiceById(string serviceId);
 Task<SportifyService> GetServiceByServicePlan(string serviceType);
 Task<List<SportifyService>> GetAllUserServicePlansByUserId(string UserId);
-Task<int>  GetNumberOfUnusedServices(int maxNumberOfMonthlyUsers);
+Task<int>  GetNumberOfUnusedYearlyServicePlans(int maxNumberOfUsers);
+Task<int>  GetNumberOfUnusedMonthlyServicePlans(int maxNumberOfUsers);
+Task<int>  GetNumberOfUnusedWeeklyServicePlans(int maxNumberOfUsers);
 
  
  }

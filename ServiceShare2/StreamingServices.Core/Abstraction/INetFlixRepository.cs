@@ -7,14 +7,14 @@ namespace Abstraction.INetFlixRepository
 public interface INetFlixRepository
   {
 
+
 Task<NetFlixService> GetServiceById(string serviceId);
 Task<NetFlixService> GetServiceByServicePlan(string serviceType);
-Task<List<NetFlixService>> GetAllUserServicePlansByUserId(string UserId);
-Task<int>  GetNumberOfUnusedServicePlans(int maxNumberOfUsers);
+Task<IEnumerable<NetFlixService>> GetAllUserServicePlansByUserId(string UserId);
+Task<int>  GetNumberOfUnusedYearlyServicePlans(int maxNumberOfUsers);
+Task<int>  GetNumberOfUnusedMonthlyServicePlans(int maxNumberOfUsers);
+Task<int>  GetNumberOfUnusedWeeklyServicePlans(int maxNumberOfUsers);
 
 
  }
-
-
-
 }
