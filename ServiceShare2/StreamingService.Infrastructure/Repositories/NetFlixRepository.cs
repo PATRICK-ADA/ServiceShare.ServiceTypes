@@ -6,6 +6,7 @@ using SModel.NetFlixService;
 namespace Infrastructure.NetFlixRepository
 {
 
+
 public class NetFlixRepository : INetFlixRepository
 {
 
@@ -23,15 +24,15 @@ _context = context;
 public async Task<NetFlixService> GetServiceById(string serviceId)
 {
 
-return await _context.Netflix.FirstOrDefaultAsync(s => s.ServiceId == ServiceID);
+return await _context.Netflix.FirstOrDefaultAsync(s => s.ServiceId == serviceID);
 
 }
 
 
-public async Task<NetFlixService> GetServiceByServicePlan(string serviceType)
+public async Task<int> GetServiceByServicePlan()
 {
 
-
+var Result =_context.Netflix.FirstOrDefaultAsync(i => i.ServiceType == serviceType)
 
 }
 
@@ -42,11 +43,12 @@ public async Task<List<NetFlixService>> GetAllUserServicePlansByUserId(string Us
 
 }
 
-public async Task<int>  GetNumberOfUnusedServicePlans(int maxNumberOfUsers)
+
+
+public async Task<int>  GetNumberOfUnusedYearlyServicePlans(int netFlixYearlyUsersCappacity)
 {
-var ServicePlans = _context.Netflix.Where(i => i == WeeklyService && i == MonthlyService && i == YearlyService ).Select(i => i).ToList();
 
-
+var unusedPlans = _context.Netflix.Where(i => i.NetFlixYearlyUsersCappacity > 0 && i.PlanType == "Yearly").ToList();
 
 }
 
