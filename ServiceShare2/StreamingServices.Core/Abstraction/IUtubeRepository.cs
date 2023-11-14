@@ -14,11 +14,11 @@ Task<IEnumerable<UtubeService>> GetServicesByUserId(string UserId);
 Task<int>  GetNumberOfUnusedYearlyServicePlans(int maxNumberOfUsers);
 Task<int>  GetNumberOfUnusedMonthlyServicePlans(int maxNumberOfUsers);
 Task<int>  GetNumberOfUnusedWeeklyServicePlans(int maxNumberOfUsers);
-Task<int> GetYearlyServiceAsync();
+Task<UtubeService> GetYearlyServiceAsync();
 
-Task<int> GetMonthlyServiceAsync();
+Task<UtubeService> GetMonthlyServiceAsync();
 
-Task<int> GetWeeklyServiceAsync();
+Task<UtubeService> GetWeeklyServiceAsync();
 
   }
 

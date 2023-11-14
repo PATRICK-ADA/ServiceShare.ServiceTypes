@@ -8,16 +8,16 @@ public interface INetFlixRepository
   {
 
 Task<NetFlixService> GetServiceById(string serviceId);
-Task<int> GetServiceByServicePlan(string serviceType);
+Task<NetFlixService?>  GetServiceByServicePlan(string serviceType);
 Task<IEnumerable<NetFlixService>> GetAllUserServicePlansByUserId(string UserId);
 Task<int>  GetNumberOfUnusedYearlyServicePlans(int maxNumberOfUsers);
 Task<int>  GetNumberOfUnusedMonthlyServicePlans(int maxNumberOfUsers);
 Task<int>  GetNumberOfUnusedWeeklyServicePlans(int maxNumberOfUsers);
 
-Task<int> GetYearlyServiceAsync();
+Task<NetFlixService?>  GetYearlyServiceAsync();
 
-Task<int> GetMonthlyServiceAsync();
+Task<NetFlixService?>  GetMonthlyServiceAsync();
 
-Task<int> GetWeeklyServiceAsync();
+Task<NetFlixService?>  GetWeeklyServiceAsync();
  }
 }
