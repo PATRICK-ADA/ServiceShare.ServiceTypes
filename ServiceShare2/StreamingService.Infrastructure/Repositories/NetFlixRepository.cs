@@ -48,15 +48,15 @@ namespace Infrastructure.NetFlixRepository
 
 
 
-   public async Task<NetFlixService?> GetServiceByServicePlan(string servicePlan)
-   { 
-   return servicePlan switch
-    {
-        "YearlyService" => await _context.Netflix.YearlyService(),
-        "MonthlyService" => await _context.Netflix.MonthlyService(),
-        "WeeklyService" => await _context.Netflix.WeeklyService()
-    };
-   }
+//    public async Task<NetFlixService?> GetServiceByServicePlan(string servicePlan)
+//    { 
+//    return servicePlan switch
+//     {
+//         "YearlyService" => await _context.Netflix.YearlyService(),
+//         "MonthlyService" => await _context.Netflix.MonthlyService(),
+//         "WeeklyService" => await _context.Netflix.WeeklyService()
+//     };
+//    }
 
    public async Task<IEnumerable<NetFlixService>> GetAllUserServicePlansByUserId(string userId)
    {
@@ -70,9 +70,9 @@ namespace Infrastructure.NetFlixRepository
    public async Task<int>  GetNumberOfUnusedYearlyServicePlans(int netFlixYearlyUsersCappacity)
    {
 
-  var unusedPlans = _context.Netflix.Where(i => i.NetFlixYearlyUsersCappacity < netFlixYearlyUsersCappacity && i.PlanType == "Yearly").ToList();
+    return await _context.Netflix.Where(i => i.NumberOfUsersRegisteredForAServicePlan < netFlixYearlyUsersCappacity).CountAsync();
 
-}
+   }
 
 
 
