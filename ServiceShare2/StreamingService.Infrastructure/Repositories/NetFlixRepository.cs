@@ -7,29 +7,29 @@ namespace Infrastructure.NetFlixRepository
 {
 
 
-public class NetFlixRepository : INetFlixRepository
-{
+    public class NetFlixRepository : INetFlixRepository
+    {
 
-private readonly ApplicationContext _context;
-
-
-public NetFlixRepository(ApplicationContext context)
-{
-
-_context = context;
-
-}
+    private readonly ApplicationContext _context;
 
 
-public async Task<NetFlixService> GetServiceById(string serviceId)
-{
+    public NetFlixRepository(ApplicationContext context)
+    {
 
-return await _context.Netflix.FirstOrDefaultAsync(s => s.ServiceId == serviceID);
+    _context = context;
 
-}
+    }
+
+
+    public async Task<NetFlixService> GetServiceById(string serviceId)
+    {
+
+    return await _context.Netflix.FirstOrDefaultAsync(s => s.ServiceId == serviceId);
+
+    }
 
  
- public async Task<NetFlixService?> GetYearlyServiceAsync()
+    public async Task<NetFlixService?> GetYearlyServiceAsync()
     {
         
         return await _context.Netflix.FirstOrDefaultAsync(i => i.YearlyService == 360);
@@ -48,29 +48,29 @@ return await _context.Netflix.FirstOrDefaultAsync(s => s.ServiceId == serviceID)
 
 
 
-public async Task<NetFlixService?> GetServiceByServicePlan(string servicePlan)
-{
- return servicePlan switch
+   public async Task<NetFlixService?> GetServiceByServicePlan(string servicePlan)
+   { 
+   return servicePlan switch
     {
         "YearlyService" => await _context.Netflix.YearlyService(),
         "MonthlyService" => await _context.Netflix.MonthlyService(),
         "WeeklyService" => await _context.Netflix.WeeklyService()
     };
-}
+   }
 
-public async Task<IEnumerable<NetFlixService>> GetAllUserServicePlansByUserId(string UserId)
-{
+   public async Task<IEnumerable<NetFlixService>> GetAllUserServicePlansByUserId(string userId)
+   {
+
+   return await _context.Netflix.FirstOrDefaultAsync(i => i.UserId == userId)''
+
+   }
 
 
 
-}
+   public async Task<int>  GetNumberOfUnusedYearlyServicePlans(int netFlixYearlyUsersCappacity)
+   {
 
-
-
-public async Task<int>  GetNumberOfUnusedYearlyServicePlans(int netFlixYearlyUsersCappacity)
-{
-
-var unusedPlans = _context.Netflix.Where(i => i.NetFlixYearlyUsersCappacity > 0 && i.PlanType == "Yearly").ToList();
+  var unusedPlans = _context.Netflix.Where(i => i.NetFlixYearlyUsersCappacity < netFlixYearlyUsersCappacity && i.PlanType == "Yearly").ToList();
 
 }
 
